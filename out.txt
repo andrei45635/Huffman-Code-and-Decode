@@ -1,0 +1,16 @@
+Frequencies:
+ L - 1
+o - 2
+r - 3
+m - 1
+e - 2
+Huffman codes:
+o = 00
+m = 101
+e = 01
+L = 100
+r = 11
+Original string: Loorrreem
+Encoded string is: 10000001111110101101
+Decoded string is: 
+Loorrreem

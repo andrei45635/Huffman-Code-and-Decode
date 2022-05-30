@@ -36,8 +36,8 @@ bool isLeaf(Node* nod) {
 void encode(Node* nod, string str, unordered_map<char, string>& huffCode) {
 	if (nod == nullptr) return;
 	if (isLeaf(nod)) huffCode[nod->ch] = (str != "") ? str : "1";
-	encode(nod, str + "0", huffCode);
-	encode(nod, str + "1", huffCode);
+	encode(nod->left, str + "0", huffCode);
+	encode(nod->right, str + "1", huffCode);
 }
 
 void decode(Node* nod, int &index, string str) {
