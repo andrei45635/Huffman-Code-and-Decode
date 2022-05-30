@@ -114,8 +114,10 @@ void buildHuffTree(string text) {
 int main() {
 
 	string text;
-	f >> text;
-	buildHuffTree(text);
+	while (std::getline(f, text)) {
+		buildHuffTree(text);
+	}
+	f.close();
 
 	return 0;
 }
